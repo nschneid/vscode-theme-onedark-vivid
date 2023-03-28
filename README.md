@@ -1,37 +1,42 @@
-# Atom One Dark Theme
+# Atom One Dark Vivid Theme
 
-[![Marketplace](https://vsmarketplacebadge.apphb.com/version/akamud.vscode-theme-onedark.svg)](https://marketplace.visualstudio.com/items/akamud.vscode-theme-onedark) [![Installs](https://vsmarketplacebadge.apphb.com/installs/akamud.vscode-theme-onedark.svg)](https://marketplace.visualstudio.com/items/akamud.vscode-theme-onedark) [![Ratings](https://vsmarketplacebadge.apphb.com/rating-short/akamud.vscode-theme-onedark.svg)](https://marketplace.visualstudio.com/items/akamud.vscode-theme-onedark)
-[![Beerpay](https://img.shields.io/beerpay/akamud/vscode-theme-onedark.svg)](https://beerpay.io/akamud/vscode-theme-onedark)  
-VSCode Theme based on Atom's [One Dark](https://github.com/atom/one-dark-syntax) theme. Best rated One Dark theme port in the marketplace, **features full Workbench theming**.
+This is the [Atom Vivid Syntax Theme](https://github.com/nschneid/vivid-syntax), recreated for VS Code.
 
-![](https://raw.githubusercontent.com/akamud/vscode-theme-onedark/master/screenshots/preview.png)
+The Atom theme was created by substituting several text colors in the [One Dark](https://github.com/atom/one-dark-syntax) theme.
 
-## Sponsors
+Accordingly, this is a fork of the [VS Code version of the One Dark theme](https://github.com/akamud/vscode-theme-onedark) by akamud.
 
-[![](https://alt-images.codestream.com/codestream_logo_ali_atomonedark.png)](https://sponsorlink.codestream.com/?utm_source=vscmarket&utm_campaign=ali_atomonedark&utm_medium=banner "Try CodeStream")  
-Eliminate context switching and costly distractions. Create and merge PRs and perform code reviews from inside your IDE while using jump-to-definition, your keybindings, and other IDE favorites.  
-[Learn more](https://sponsorlink.codestream.com/?utm_source=vscmarket&utm_campaign=ali_atomonedark&utm_medium=banner "Learn more")
 
-## Installing
+![](https://raw.githubusercontent.com/nschneid/vscode-theme-onedark-vivid/master/screenshots/preview.png)
 
-This extension is available for free in the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items/akamud.vscode-theme-onedark)  
+## Color Substitutions
 
-## Looking for the One Light theme?
+Mirroring the [Atom version](https://github.com/nschneid/vivid-syntax/compare/f481d062d5605fe85e905556ffc2d781eb6a3a66...nschneid:vivid-syntax:master#diff-4cdb52a9f32fd0060585e9d37ac98980f88d5d0c2151bfb12b374e104276c3f7), substitutions are as follows:
 
-If you are interested you can also have the One Light theme available [here](https://github.com/akamud/vscode-theme-onelight).
+```less
+@hue-1:   hsl(187, 47%, 55%); // <-cyan #36AABA (#56B6C2 in the new theme)
+@hue-1:   hsl( 95, 38%, 62%); // <-green #98C379 (builtin, regexp escape, etc.)
 
-## What's new?
+@hue-2:   hsl(207, 82%, 66%); // <-blue #61AFEF
+@hue-2:   hsl(207, 82%, 66%); // <-(function/method name, etc.)
 
-Click here to go to the [Changelog](https://github.com/akamud/vscode-theme-onedark/blob/master/CHANGELOG.md)
+@hue-3:   hsl(286, 60%, 67%); // <-purple #DEB1EC (#C678DD in the new theme)
+@hue-3:   hsl(334, 100%, 70%); // <-magenta #FF66A8 (keyword, regexp backreference or start/end of string, etc.)
 
-## Inconsistencies?
+@hue-4:   hsl( 95, 38%, 62%); // <-green #98C379
+@hue-4:   rgb(195, 161, 242); // <-purple #C3A1F2 (string, etc.)
 
-If you find any inconsistency in any language, raise an Issue and I'll fix it, please provide a sample for the language so I can compare. 
+@hue-5:   hsl(355, 65%, 65%); // <-red 1 #E06C75
+@hue-5:   hsl(334, 100%, 70%); // <-magenta #FF66A8 (non-Python variable, tag, etc.)
 
-**Attention:** If you are using **VSCode 1.43.0**, you must be seeing very different colors, as reported [here](https://github.com/akamud/vscode-theme-onedark/issues/119). An update to VSCode will be released fixing this issue for all themes, in the meantime, make sure you set this in your settings:
+@hue-5-2: hsl(  5, 48%, 51%); // <-red 2 #BE5046
+@hue-5-2: hsl(  5, 48%, 51%); //
 
-```json
-"editor.semanticHighlighting.enabled": false
+@hue-6:   hsl( 29, 54%, 61%); // <-orange 1 #D19A66
+@hue-6:   hsl(30, 100%, 70%); // <-orange 1 #FFB366 (attribute, numeric/constant, special value, string placeholder, regexp character class, etc.)
+
+@hue-6-2: hsl( 39, 67%, 69%); // <-orange 2 #E5C07B
+@hue-6-2: hsl(30, 100%, 70%); // <-orange 2 #FFB366 (class name)
 ```
 
 ## Customization
@@ -48,7 +53,3 @@ If you download and install the font in your system, you can add this option to 
     "editor.fontFamily": "YOUR FONT, Menlo, Monaco, 'Courier New', monospace"
 }
 ```
-
-## Credits
-
-[Atom](https://github.com/atom)

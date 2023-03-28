@@ -1,9 +1,9 @@
 {
     "name": "vscode-theme-onedark",
-    "displayName": "Atom One Dark Theme",
-    "description": "One Dark Theme based on Atom",
-    "version": "2.3.0",
-    "publisher": "akamud",
+    "displayName": "Atom One Dark Vivid Theme",
+    "description": "One Dark Vivid Theme based on Atom",
+    "version": "1.0.0",
+    "publisher": "nschneid",
     "license": "MIT",
     "galleryBanner": {
         "color": "#282C34",
@@ -19,45 +19,25 @@
         "atom",
         "theme",
         "dark",
-        "one dark"
+        "one dark",
+        "vivid"
     ],
     "icon": "icon.png",
     "contributes": {
         "themes": [
             {
-                "label": "Atom One Dark",
+                "label": "Atom One Dark Vivid",
                 "uiTheme": "vs-dark",
-                "path": "./themes/OneDark.json"
+                "path": "./themes/OneDarkVivid.json"
             }
         ]
     },
     "bugs": {
-        "url": "https://github.com/akamud/vscode-theme-onedark/issues",
-        "email": "muddibr@gmail.com"
+        "url": "https://github.com/nschneid/vscode-theme-onedark-vivid/issues"
     },
-    "homepage": "https://github.com/akamud/vscode-theme-onedark",
+    "homepage": "https://github.com/nschneid/vscode-theme-onedark-vivid",
     "repository": {
         "type": "git",
-        "url": "https://github.com/akamud/vscode-theme-onedark"
-    },
-    "sponsor": {
-        "url": "https://github.com/sponsors/akamud"
-    },
-    "badges": [
-        {
-            "url": "https://vsmarketplacebadge.apphb.com/version/akamud.vscode-theme-onedark.svg",
-            "href": "https://marketplace.visualstudio.com/items/akamud.vscode-theme-onedark",
-            "description": "Extension version"
-        },
-        {
-            "url": "https://vsmarketplacebadge.apphb.com/installs/akamud.vscode-theme-onedark.svg",
-            "href": "https://marketplace.visualstudio.com/items/akamud.vscode-theme-onedark",
-            "description": "Extension installs"
-        },
-        {
-            "url": "https://vsmarketplacebadge.apphb.com/rating/akamud.vscode-theme-onedark.svg",
-            "href": "https://marketplace.visualstudio.com/items/akamud.vscode-theme-onedark",
-            "description": "Extension Rating"
-        }
-    ]
+        "url": "https://github.com/nschneid/vscode-theme-onedark-vivid"
+    }
 }

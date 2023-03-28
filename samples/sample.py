@@ -5,27 +5,27 @@ import smtplib
 # Import the email modules we will need
 from email.mime.text import MIMEText
 
-# Open a plain text file for reading.  For this example, assume that
-# the text file contains only ASCII characters.
-fp = open(textfile, 'rb')
-# Create a text/plain message
-msg = MIMEText(fp.read())
-fp.close()
+# Open a plain text file for reading.
+msg = {}
+with open('myfile.txt') as fP:
+    text = fP.read().strip()
+    msg['Subject'] = text.splitlines()[0]
+    for i in range(10):
+        msg[i,i+1] = msg[0][i:i+1]
 
-# me == the sender's email address
-# you == the recipient's email address
-msg['Subject'] = 'The contents of %s' % textfile
-msg['From'] = me
-msg['To'] = you
+def myfun(myvar: int=2, *args, **kwargs):
+    """
+    Multiply the provided integer
+    by an approximation of pi.
+    """
+    PI = 3.14
+    return myvar*PI
 
 @classmethod
-def someMethod(foo):
-    someOtherMethod(1, "2",bar=foo)
-
-a = True
-b = 'bob'
-if True or a is not False and 'b' in b:
-    print('asdf')
+def someMethod(foo, bar='bar\nbar'):
+    print(f'{foo} {bar!r}')
+    if foo is not None and 'bar' in bar:
+        myfun(1, "2", bar=foo)
 
 foo = list()
 
@@ -37,12 +37,10 @@ const = 42
 PI = 3.14
 langConst = True
 NOTHING = None
-print '{} {!r}'.format('some string formatted', 'another\nstring')
+
 
 from numpy import ndarray
 
-def myfun(myvar: ndarray=2):
-    return 0
 
 if __name__ is '__main__' and not None:
     pass
