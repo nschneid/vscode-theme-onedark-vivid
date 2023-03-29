@@ -39,6 +39,15 @@ Mirroring the [Atom version](https://github.com/nschneid/vivid-syntax/compare/f4
 @hue-6-2: hsl(30, 100%, 70%); // <-orange 2 #FFB366 (class name)
 ```
 
+## Installation
+
+This extension is not published to the VS Code Marketplace. It needs to be downloaded and [installed](https://code.visualstudio.com/docs/editor/extension-marketplace#_install-from-a-vsix) as follows:
+
+1. Download vscode-theme-onedark-1.0.0.vsix
+2. In the VS Code command dropdown, select **Extensions: Install from VSIX** and select the .vsix file
+3. In the Extensions sidebar, select the **Atom One Dark Vivid Theme** extension.
+4. In the pane that opens, click the **Set Color Theme** button to activate the theme.
+
 ## Customization
 
 If you are using VSCode 1.12+ versions you can customize the colors to your liking, overriding the ones provided by this theme. More info [here](https://code.visualstudio.com/docs/getstarted/theme-color-reference).
